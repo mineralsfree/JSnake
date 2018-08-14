@@ -1,0 +1,39 @@
+<html>
+  <head>
+
+
+  <title>Lets try something else"></title>
+<link rel="stylesheet" type="text/css" href="Style.css">
+
+
+  </head>
+
+
+  <body onload="high">
+    <p>
+    <h1><bold>JS</bold>nake Classic</h1>
+  </p>
+    <script src="snake.js" type="text/javascript">
+    </script>
+    <script src="cookies.js" type="text/javascript">
+    </script>
+
+    <div id="field" id="lol">
+
+    </div>
+    <div id="highScore">
+      Your Highscores: <bold>0</bold>
+    </div>
+    <span id="cons">Press Space to start</span>
+    <br>
+    <span>←,→, ↑, ↓ to control</span>
+    <br>
+    <span>Dont hit yourself and  the Wall!</span>
+
+    <script type="text/javascript">
+  gameField = new Field(field);
+  onkeydown = function (e) {gameField.onKeyDown(e)}
+    </script>
+
+  </body>
+</html>
