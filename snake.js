@@ -145,7 +145,7 @@ let Snake = class{
     this.x=0
     this.y=0
     this.ChangeD = false
-    this.gameState = false
+    this.gameState = true
     this.direction = D_DOWN
     this.length = START_SNAKE_SIZE
     this.arr = []
@@ -171,7 +171,7 @@ getSnakeDirection(){
 }
 
 changeGameState(){
-  this.game = !this.game
+  //this.game = !this.game
 }
 drawSnake(){
   for (var i = 0; i < this.arr.length; i++) {
@@ -182,14 +182,10 @@ setSnakeDirection(dir){
   this.direction = dir
 }
 getGameState(){
-  if (this.game)
     return "Gooood luck"
-    else {
-      return "Game Paused:("
-    }
 }
   stepSnake(){
-    if (this.game){
+
       this.ChangeD = false
     let tail =this.arr[this.arr.length-1]
     let head =  {x:1, y:1}
@@ -233,6 +229,6 @@ getGameState(){
 
     this.drawSnake()
 
-}
+
 }
 }
